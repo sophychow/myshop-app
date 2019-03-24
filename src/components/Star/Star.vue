@@ -1,6 +1,6 @@
 <template>
-  <div class="star" :class="'star-' + size">
-    <span class="star-item" v-for="(starCls, index) in starClsArr" :class="starCls" :key="index"></span>
+  <div class="star" :class="'star-'+size">
+    <span class="star-item" v-for="(starCls, index) in starClasses" :class="starCls" :key="index"></span>
   </div>
 </template>
 
@@ -12,16 +12,12 @@ const LENGTH = 5
 
 export default {
   props: {
-    size: {
-      type: Number
-    },
-    score: {
-      type: Number
-    }
+    size: Number,
+    score: Number
   },
 
   computed: {
-    starClsArr() {
+    starClasses() {
       const { score } = this
       let arr = []
       let integer = Math.floor(score)
