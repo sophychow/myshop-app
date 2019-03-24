@@ -89,7 +89,7 @@
       </a>
     </section>
     <section class="profile_my_order border-1px">
-      <mt-button class="logout" style="width:100%;margin:20px 0;" type="danger" v-if="!userInfo._id" @click="logout">退出登陆</mt-button>
+      <mt-button class="logout" style="width:100%;margin:20px 0;" type="danger" v-if="userInfo._id" @click="logout">退出登陆</mt-button>
     </section>
   </section>
 </template>
