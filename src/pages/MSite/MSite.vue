@@ -75,7 +75,7 @@ export default {
   },
 
   computed: {
-    ...mapState(['address', 'categorys']),
+    ...mapState(['address', 'categorys', 'userInfo']),
 
     categorysArr() {
       const {categorys} = this
