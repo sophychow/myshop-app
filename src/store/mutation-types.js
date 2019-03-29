@@ -15,3 +15,4 @@ export const INCREMENT_FOOD_COUNT = 'increment_food_count'
 export const DECREMENT_FOOD_COUNT = 'decrement_food_count'
 
 export const CLEAR_CART = 'clear_cart'
+export const RECEIVE_SEARCH_SHOPS = 'reset_search_shops'
