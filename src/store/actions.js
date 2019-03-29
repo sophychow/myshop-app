@@ -84,11 +84,12 @@ export default {
       callback && callback()
     }
   },
-  async getShopRatings({commit}) {
+  async getShopRatings({commit}, callback) {
     const result = await reqShopRatings()
     if(result.code === 0) {
       const ratings = result.data
       commit(RECEIVE_RATINGS, {ratings})
+      callback && callback()
     }
   },
 
