@@ -7,6 +7,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+// import './mock/MockServer.js'
+import './mock/mockServer' // 加载mockServer即可
+
 Vue.component(Button.name, Button)  //<mt-button>
 
 new Vue({
